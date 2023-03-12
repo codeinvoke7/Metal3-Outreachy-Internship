@@ -22,7 +22,6 @@ header h1 {
 nav ul {
 	list-style: none;
 	display: flex;
-    
 }
 
 nav li {
@@ -64,7 +63,7 @@ section p, section ul{
 
 section li {
 	margin-bottom: 10px;
-    list-style-type: square;
+    list-style: none;
 }
 
 /* Footer styles */
