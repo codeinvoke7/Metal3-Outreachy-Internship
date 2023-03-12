@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Metal3: The Kubernetes-Native Way of Managing Bare Metal Infrastructure</title>
-    <link rel="stylesheet" href="style.css">
+    <title>
+      Metal3: The Kubernetes-Native Way of Managing Bare Metal Infrastructure
+    </title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -20,50 +22,159 @@
     <main>
       <section id="about">
         <h2>About Metal<sup>3</sup></h2>
-        <p>Metal3 is an open-source project that provides a Kubernetes-native way of managing bare metal infrastructure. Its goal is to simplify the deployment and management of bare metal infrastructure in a cloud-native environment,
-         while still leveraging the performance and control of bare metal. The project aims to provide users with the benefits of cloud-native infrastructure, such as automation, scalability, and flexibility, while still leveraging the performance and control of bare metal infrastructure.
-         The project is part of the larger Metal stack, which also includes the MetalLB load balancer and the Cluster API (CAPI) infrastructure automation framework.
-         Metal3 aims to simplify the deployment and management of Kubernetes clusters on bare-metal infrastructure, making it easier for developers and operators to take advantage of the benefits of containerization without the overhead of managing virtualization layers.
-         <br>The Metal3 project leverages several existing technologies, such as the Redfish API, PXE boot, and IPMI, to enable the automated provisioning of bare-metal infrastructure. By integrating with the Kubernetes API, Metal3 can manage the entire lifecycle of bare-metal nodes, from initial discovery and provisioning to ongoing maintenance and updates.
-         One of the key features of Metal3 is the ability to deploy Kubernetes clusters without the need for specialized hardware or infrastructure. This allows organizations to leverage existing hardware assets, such as unused servers or desktop machines, to create Kubernetes clusters for development, testing, or production environments.
-         Metal3 also provides a flexible and extensible architecture, allowing users to customize and extend the platform to meet their specific needs. The project is actively maintained by a community of developers and contributors, and has been adopted by several large organizations, including Intel, Red Hat, and Google.</p>
+        <p>
+          Metal3 is an open-source project that provides a Kubernetes-native way
+          of managing bare metal infrastructure. Its goal is to simplify the
+          deployment and management of bare metal infrastructure in a
+          cloud-native environment, while still leveraging the performance and
+          control of bare metal. The project aims to provide users with the
+          benefits of cloud-native infrastructure, such as automation,
+          scalability, and flexibility, while still leveraging the performance
+          and control of bare metal infrastructure. The project is part of the
+          larger Metal stack, which also includes the MetalLB load balancer and
+          the Cluster API (CAPI) infrastructure automation framework. Metal3
+          aims to simplify the deployment and management of Kubernetes clusters
+          on bare-metal infrastructure, making it easier for developers and
+          operators to take advantage of the benefits of containerization
+          without the overhead of managing virtualization layers. <br />The
+          Metal3 project leverages several existing technologies, such as the
+          Redfish API, PXE boot, and IPMI, to enable the automated provisioning
+          of bare-metal infrastructure. By integrating with the Kubernetes API,
+          Metal3 can manage the entire lifecycle of bare-metal nodes, from
+          initial discovery and provisioning to ongoing maintenance and updates.
+          One of the key features of Metal3 is the ability to deploy Kubernetes
+          clusters without the need for specialized hardware or infrastructure.
+          This allows organizations to leverage existing hardware assets, such
+          as unused servers or desktop machines, to create Kubernetes clusters
+          for development, testing, or production environments. Metal3 also
+          provides a flexible and extensible architecture, allowing users to
+          customize and extend the platform to meet their specific needs. The
+          project is actively maintained by a community of developers and
+          contributors, and has been adopted by several large organizations,
+          including Intel, Red Hat, and Google.
+        </p>
       </section>
       <section id="mission">
         <h2>Mission</h2>
-        <p>The mission of the Metal3 project is to enable users to manage bare metal infrastructure in a cloud-native way, with the same level of flexibility, scalability, and automation as virtual machines in a cloud environment. With the rise of containerization and the popularity of Kubernetes, there has been a growing need for a solution that can manage bare metal infrastructure in a similar manner. The Metal3 project aims to bridge this gap by providing a declarative, Kubernetes-native API for managing bare metal servers.
-            One of the key objectives of the Metal3 project is to provide an interoperable, vendor-neutral API that can work with a wide range of hardware vendors and configurations. This allows users to avoid vendor lock-in and switch between hardware vendors as needed, without having to change their infrastructure management solution.
-            The Metal3 project also aims to provide a secure and reliable infrastructure management solution for bare metal servers. This includes features such as power management, monitoring, and fault tolerance, as well as secure boot and firmware updates. The project places a strong emphasis on security and compliance, and strives to provide a solution that meets the needs of enterprise users.</p>
+        <p>
+          The mission of the Metal3 project is to enable users to manage bare
+          metal infrastructure in a cloud-native way, with the same level of
+          flexibility, scalability, and automation as virtual machines in a
+          cloud environment. With the rise of containerization and the
+          popularity of Kubernetes, there has been a growing need for a solution
+          that can manage bare metal infrastructure in a similar manner. The
+          Metal3 project aims to bridge this gap by providing a declarative,
+          Kubernetes-native API for managing bare metal servers. One of the key
+          objectives of the Metal3 project is to provide an interoperable,
+          vendor-neutral API that can work with a wide range of hardware vendors
+          and configurations. This allows users to avoid vendor lock-in and
+          switch between hardware vendors as needed, without having to change
+          their infrastructure management solution. The Metal3 project also aims
+          to provide a secure and reliable infrastructure management solution
+          for bare metal servers. This includes features such as power
+          management, monitoring, and fault tolerance, as well as secure boot
+          and firmware updates. The project places a strong emphasis on security
+          and compliance, and strives to provide a solution that meets the needs
+          of enterprise users.
+        </p>
       </section>
       <section id="components">
         <h2>Components</h2>
-        <p><strong>The Metal3 project is composed of several key components, including:</strong></p>
+        <p>
+          <strong
+            >The Metal3 project is composed of several key components,
+            including:</strong
+          >
+        </p>
         <ul>
-          <li><strong>Bare Metal Operator:</strong> This component is responsible for managing the lifecycle of bare metal servers, including provisioning, power management, and monitoring. It provides a declarative, Kubernetes-native API for managing bare metal infrastructure.</li>
-          <li><strong>Cluster API Provider Metal3:</strong> This component is a Kubernetes Cluster API provider that allows users to provision and manage bare metal clusters using Kubernetes API primitives. It allows users to manage bare metal clusters in the same way they would manage virtual clusters in a cloud environment.</li>
-          <li><strong>Metal3-io/ironic:</strong> This component is an OpenStack project that provides a RESTful API for managing bare metal servers. It allows users to provision and manage bare metal servers using a RESTful API, and integrates with the Bare Metal Operator to provide a Kubernetes-native API for managing bare metal infrastructure.</li>
-          <li><strong>Metal3-io/ipa-operator:</strong> This component is responsible for managing the Ironic Python Agent (IPA), which is used for deploying operating systems onto bare metal servers. It provides a declarative, Kubernetes-native API for managing the IPA and the deployment of operating systems onto bare metal servers.</li>
+          <li>
+            <strong>Bare Metal Operator:</strong> This component is responsible
+            for managing the lifecycle of bare metal servers, including
+            provisioning, power management, and monitoring. It provides a
+            declarative, Kubernetes-native API for managing bare metal
+            infrastructure.
+          </li>
+          <li>
+            <strong>Cluster API Provider Metal3:</strong> This component is a
+            Kubernetes Cluster API provider that allows users to provision and
+            manage bare metal clusters using Kubernetes API primitives. It
+            allows users to manage bare metal clusters in the same way they
+            would manage virtual clusters in a cloud environment.
+          </li>
+          <li>
+            <strong>Metal3-io/ironic:</strong> This component is an OpenStack
+            project that provides a RESTful API for managing bare metal servers.
+            It allows users to provision and manage bare metal servers using a
+            RESTful API, and integrates with the Bare Metal Operator to provide
+            a Kubernetes-native API for managing bare metal infrastructure.
+          </li>
+          <li>
+            <strong>Metal3-io/ipa-operator:</strong> This component is
+            responsible for managing the Ironic Python Agent (IPA), which is
+            used for deploying operating systems onto bare metal servers. It
+            provides a declarative, Kubernetes-native API for managing the IPA
+            and the deployment of operating systems onto bare metal servers.
+          </li>
         </ul>
       </section>
       <section id="goals">
         <h2>Goals</h2>
         <ul>
-            <li><strong>Provisioning and managing bare metal infrastructure using declarative Kubernetes APIs:</strong> The Metal3 project aims to provide a unified API for managing both physical and virtual infrastructure using Kubernetes.
-            </li>
-            <li><strong>Automating the deployment of Kubernetes clusters on bare metal:</strong> Metal3 allows users to deploy Kubernetes clusters on bare metal hardware, using automated tools to streamline the process and minimize manual intervention.</li>
-            <li><strong>Enabling Hardware Management at Scale:</strong> With Metal3, users can manage large fleets of bare metal servers with ease, ensuring that they are configured correctly, running the right firmware and drivers, and are being monitored for any issues.</li>
-            <li><strong>Simplifying the management of Hardware Lifecycle:</strong> Metal3 simplifies the hardware lifecycle management, from provisioning to retirement, with features like firmware management, IPMI management, inventory management, and power management.
-            </li>
-            <li><strong>Encouraging interoperability and standardization:</strong> The Metal3 project is committed to promoting interoperability and standardization in bare metal infrastructure management. It supports open standards like the Redfish API and the Common Information Model (CIM), making it easier to manage hardware from multiple vendors and platforms</li>
+          <li>
+            <strong
+              >Provisioning and managing bare metal infrastructure using
+              declarative Kubernetes APIs:</strong
+            >
+            The Metal3 project aims to provide a unified API for managing both
+            physical and virtual infrastructure using Kubernetes.
+          </li>
+          <li>
+            <strong
+              >Automating the deployment of Kubernetes clusters on bare
+              metal:</strong
+            >
+            Metal3 allows users to deploy Kubernetes clusters on bare metal
+            hardware, using automated tools to streamline the process and
+            minimize manual intervention.
+          </li>
+          <li>
+            <strong>Enabling Hardware Management at Scale:</strong> With Metal3,
+            users can manage large fleets of bare metal servers with ease,
+            ensuring that they are configured correctly, running the right
+            firmware and drivers, and are being monitored for any issues.
+          </li>
+          <li>
+            <strong>Simplifying the management of Hardware Lifecycle:</strong>
+            Metal3 simplifies the hardware lifecycle management, from
+            provisioning to retirement, with features like firmware management,
+            IPMI management, inventory management, and power management.
+          </li>
+          <li>
+            <strong>Encouraging interoperability and standardization:</strong>
+            The Metal3 project is committed to promoting interoperability and
+            standardization in bare metal infrastructure management. It supports
+            open standards like the Redfish API and the Common Information Model
+            (CIM), making it easier to manage hardware from multiple vendors and
+            platforms
+          </li>
         </ul>
       </section>
       <section id="get-started">
         <h2>Get Started</h2>
-        <p>To get started with Metal3, visit our <a href="https://metal3.io/">website</a> and check out our documentation. You can also join our community on <a href="https://github.com/metal3-io">GitHub</a> and contribute to the project.</p>
-        <a href="https://metal3.io/documentation.html" class="cta-button">Read the Guide</a>
+        <p>
+          To get started with Metal3, visit our
+          <a href="https://metal3.io/">website</a> and check out our
+          documentation. You can also join our community on
+          <a href="https://github.com/metal3-io">GitHub</a> and contribute to
+          the project.
+        </p>
+        <a href="https://metal3.io/documentation.html" class="cta-button"
+          >Read the Guide</a
+        >
       </section>
     </main>
     <footer>
-        <p>&copy; 2023 Metal<sup>3</sup></p>
-      </footer>
+      <p>&copy; 2023 Metal<sup>3</sup></p>
+    </footer>
   </body>
 </html>
