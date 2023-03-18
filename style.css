@@ -6,22 +6,29 @@
 
 p{
     font-size: 16.5px;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* Header styles */
 header {
 	background-color: #333;
 	color: #01EEC4;
 	padding: 20px;
+	width: 100vw;
+	display: flex;
 }
 
 header h1 {
 	font-size: 32px;
 }
-
+nav{
+	padding-top: 14px;
+}
 nav ul {
 	list-style: none;
 	display: flex;
+	position: absolute;
+	right: 80px;
+	
 }
 
 nav li {
