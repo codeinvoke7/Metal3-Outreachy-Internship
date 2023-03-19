@@ -7,13 +7,14 @@
 p{
     font-size: 16.5px;
     font-family: Arial, Helvetica, sans-serif;
+	line-height: 20%;
 }
 /* Header styles */
 header {
 	background-color: #333;
 	color: #01EEC4;
 	padding: 20px;
-	width: 100vw;
+	width: 100%;
 	display: flex;
 }
 
@@ -46,7 +47,7 @@ nav a {
 
 /* Main styles */
 main {
-	max-width: 800px;
+	width: 950px;
 	margin: 0 auto;
 	padding: 20px;
 }
@@ -60,12 +61,12 @@ section {
 
 section h2 {
 	font-size: 28px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 section p, section ul{
 	margin-bottom: 20px;
-    line-height: 25px;
+    line-height: 1.8em;
 }
 
 section li {
