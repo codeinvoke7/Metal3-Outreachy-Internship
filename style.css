@@ -28,7 +28,7 @@ nav ul {
 	list-style: none;
 	display: flex;
 	position: absolute;
-	right: 80px;
+	right: 0px;
 	
 }
 
@@ -47,9 +47,24 @@ nav a {
 
 /* Main styles */
 main {
-	width: 950px;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 20px;
+}
+
+@media (width >= 600px){
+	main {
+		max-width: 900px;
+	
+	}
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		position: absolute;
+		right: 80px;
+		
+	}
 }
 
 section {
